@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Phoenix Cyber Eye</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            padding: 10px;
+        }
+        header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 20px;
+            font-family: 'Arial Black', sans-serif;
+            color: #ffffff;
+            margin: 0;
+        }
+       /* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+}
+nav a:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+        section {
+            text-align: center;
+            padding: 30px;
+        }
+        section h2 {
+            font-size: 30px;
+            font-family: 'Arial Black', sans-serif;
+            margin-bottom: 10px;
+            color: #ff8c00; /* Dark orange color */
+        }
+        section h3 {
+            font-size: 16px;
+            font-style: italic;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out; /* Smooth hover transition */
+        }
+        .content:hover {
+            transform: translateY(-10px); /* Hover effect for content */
+        }
+        .content img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for images */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Image hover effect */
+        }
+        .content img:hover {
+            transform: scale(1.05); /* Image zoom on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+        }
+        .content div {
+            max-width: 100%;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .content h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: white; /* Dark orange color */
+        }
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header img {
+                width: 35px;
+                height: 35px;
+            }
+            header h1 {
+                font-size: 18px;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            nav li {
+                margin: 5px 0;
+            }
+            section h2 {
+                font-size: 24px;
+            }
+            section h3 {
+                font-size: 14px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .content img {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+            .content img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            }
+            .content div {
+                text-align: center;
+                padding: 0 10px;
+            }
+            .content h4 {
+                font-size: 18px;
+            }
+            .content p {
+                font-size: 14px;
+                text-align: center;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Content Overlay -->
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="images/phoenix.png" alt="Phoenix Logo">
+        <h1>PhoenixCyberEye</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- About Section -->
+<section>
+    <h2>The PhoenixCyberEye</h2>
+    <h3>Guardian of Your Digital World</h3>
+
+    <div class="content">
+        <img src="images/phoenix.png" alt="Phoenix Icon">
+        <div>
+            <h4>Phoenix</h4>
+            <p>
+                At Phoenix Cyber Eye, we are dedicated to being your vigilant guardians in the ever-evolving realm of cybersecurity. 
+                Our mission is to empower individuals and organizations with the knowledge and tools needed to protect their digital 
+                assets against the growing tide of cyber threats.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="images/5.jpeg" alt="Mission Icon">
+        <div>
+            <h4>Our Mission</h4>
+            <p>
+                Cybersecurity is more than just a field—it's a commitment to safeguarding the digital world. We strive to provide the latest updates, in-depth analyses, and practical guides that help you stay one step ahead of cybercriminals. Our goal is to make cybersecurity accessible and understandable for everyone, from tech enthusiasts to professionals.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="images/4.jpeg" alt="Vision Icon">
+        <div>
+            <h4>Our Vision</h4>
+            <p>
+                We envision a world where everyone is empowered to navigate the digital landscape securely and confidently. By sharing our expertise and insights, we aim to foster a community that prioritizes cybersecurity and digital privacy.
+            </p>
+            <p><b>Be ready to secure in this dark world - Phoenix</b></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

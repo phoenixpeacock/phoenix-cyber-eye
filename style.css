@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 90px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/* Content overlay */
+.content {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Logo Styles */
+header .logo {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+/* Align navigation links next to the logo */
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 9rem;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 90px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+header nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #FF4500;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Styles for Other Pages */
+section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Blog, About, and Contact Section Styles */
+.blog {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    color: white;
+}
+
+.blog h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card styling for blog content */
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-text h2 {
+    font-size: 1.5rem;
+    color: #FF4500;
+    margin-bottom: 10px;
+}
+
+.blog-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background-color: #121212;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+        overflow-x: visible; /* Ensure overflow is visible */
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+header nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+        overflow-x: visible; /* Ensure overflow is visible */
+
+}
+
+header nav a:hover {
+    color: #FF4500;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+            overflow-x: visible; /* Ensure overflow is visible */
+
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-heading {
+        font-size: 1.2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin: 0 0 20px 0;
+    }
+}
+
+
+/* Content Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    overflow-x: visible; /* Ensure overflow is visible */
+
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h1 {
+    color: #333;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.details i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: #121212; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+    color: #FFA500; /* Orange color for headings */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #FFA500; /* Orange border */
+    background-color: #222; /* Darker background for inputs */
+    color: #fff; /* White text for inputs */
+}
+
+.contact-form button {
+    background-color: black; /* Orange button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: white; /* Darker orange on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-icons a {
+    color: black;
+    margin-right: 15px;
+}
+
+.footer-icons a:hover {
+    color: black; /* Change footer icon color to orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+            overflow-x: visible; /* Ensure overflow is visible */
+
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .blog h1 {
+        font-size: 1.8rem;
+    }
+}
